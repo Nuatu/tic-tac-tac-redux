@@ -10,7 +10,7 @@ describe("Player", function() {
   describe("create", function() {
     it("creates a new Player object", function() {
       var testPlayer = Object.create(Player);
-      testPlayer.initialize("X");
+      // testPlayer.initialize("X");
       Player.isPrototypeOf(testPlayer).should.equal(true);
     });
   });
@@ -28,7 +28,7 @@ describe("Space", function() {
   describe("create", function() {
     it("creates a new Space object", function() {
       var testSpace = Object.create(Space);
-      testSpace.initialize(1, 2);
+      // testSpace.initialize(1, 2);
       Space.isPrototypeOf(testSpace).should.equal(true);
     });
   });
@@ -53,6 +53,13 @@ describe("Board", function() {
       testBoard.space9.yCoordinate.should.equal(3);
     });
   });
+  describe("create", function() {
+    it("creates a new Board object with 9 spaces", function() {
+      var testBoard = Object.create(Board);
+      // testBoard.initialize();
+      Board.isPrototypeOf(testBoard).should.equal(true);
+    })
+  })
 });
 
 

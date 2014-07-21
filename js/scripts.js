@@ -37,6 +37,11 @@ var Board = {
     this.space7 = Space.create(3,1);
     this.space8 = Space.create(3,2);
     this.space9 = Space.create(3,3);
+  },
+  create: function() {
+    var testBoard = Object.create(Board);
+    testBoard.initialize();
+    return testBoard;
   }
     // var coordinates = [[1,1],[1,2],[1,3],[2,1],[2,2],[2,3],[3,1],[3,2],[3,3]];
     // this.spaces = [];
